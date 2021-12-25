@@ -16,8 +16,8 @@ $mail->Host = "smtp.gmail.com"; //Gamil的SMTP主機
 $mail->Port = 465;  //Gamil的SMTP主機的埠號(Gmail為465)。
 $mail->CharSet = "utf-8"; //郵件編碼
 
-$mail->Username = "veter821111@gmail.com"; //Gamil帳號
-$mail->Password = "miss3eta4f3d"; //Gmail密碼
+$mail->Username = "youraccount@gmail.com"; //Gamil帳號
+$mail->Password = "password"; //Gmail密碼
 
 $mail->From = $Mail; //寄件者信箱
 $mail->FromName = "線上客服"; //寄件者姓名
