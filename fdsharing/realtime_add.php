@@ -110,7 +110,7 @@ include("check.php");
 										  value="<?php echo $formatted_address ?>" required placeholder="請輸入目前所在地" title='由英文或數字所組成的6~16字元'>
 										  <br>
 										  <?php if (!empty($formatted_address)){ ?>
-											 <iframe  width="500" height="350" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=<?php  echo $formatted_address; ?>&key=AIzaSyB6rPWjbHyRZoomestCID_UVGx27rHMqW8" allowfullscreen >d  </iframe> 
+											 <iframe  width="500" height="350" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=<?php  echo $formatted_address; ?>&key=Your Keys" allowfullscreen >d  </iframe> 
 										  <?php
 										  }else{
 											  echo '';
