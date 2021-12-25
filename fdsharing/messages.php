@@ -1,0 +1,37 @@
+<?php include("mysql.inc.php"); ?>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>無標題文件</title>
+</head>
+
+<body>
+<?php
+$query_RecNews = " SELECT * FROM news  " ;
+$RecNews = mysql_query($query_RecNews);
+?>
+
+<table width="100%" align="center" border="0" cellpadding="2" class="table-striped table-hover table-condensed">
+  <tr>
+    <td align="center" width="30%">日　　期</td>
+    <td align="center" width="70%">標　　題</td>
+
+  </tr>
+  <?php  while ( $row_RecNews = mysql_fetch_array($RecNews) ){
+?>
+  <tr>
+    <td align="center" width="30%">　
+	<?php echo $row_RecNews["date"] ?>
+    </td>
+    <td align="center" width="70%">　
+    <a href="messages_note.php?newsid=<?php echo $row_RecNews["newsid"];?>"><?php echo $row_RecNews["title"] ?></a>
+
+    </td>
+
+
+<?php } ?>  </tr>
+
+  </table>
+</body>
+</html>
